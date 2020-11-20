@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link href="image_sprite/ip2location-image-sprite-5.css" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/5fd1a0dfdd.js" crossorigin="anonymous"></script>
+
+        <title>create event page 1</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="user-nav">
+                <div class="logobox">
+                 <img src="c:\Users\HP\Desktop\EVELINK\create event 1\evelinklogo.png" alt="EVELINK" class="logo">
+                </div>
+                <div class="user-nav__user">
+                 <img src="c:\Users\HP\Desktop\EVELINK\create event 1\userphoto.jpg" alt="User photo" class="user-photo">
+                </div>
+            </nav>
+        </header>
+
+        <div class="sidebar">
+           <ol class="side-nav">
+             <li class="side-nav__item">Event type</li>
+             <li class="side-nav__item">Event details</li>
+             <li class="side-nav__item">Location & Time</li>
+             <li class="side-nav__item">Media </li>
+             <li class="side-nav__item">Confirm Details</li>   
+           </ol>
+        </div>
+
+        <div class="content">
+           <section class="main">
+               <h2>Name of your event and Description</h2>
+               <form action="event details">
+                 <label for="venue"> Venue*</label>
+                 <input type="text" id="venue" name="Venue" placeholder="Where will the event take place?">
+                 <input type="text" id="venuesearch" name="Venuesearch" placeholder="Search for a venue or address">
+
+                 <h2>When is your event*</h2>
+                 <label class="container">Single Event - Once in a Year or Lifetime
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                 </label>
+
+                  <label class="container">Recurring Event - Repeated more than once
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <section class="startdt">
+                    <label for="date">Date &nbsp;</label>
+                    <input type="date" id="date" name="Date" placeholder="Start Date"> &nbsp;&nbsp;&nbsp;
+                   
+                    <label for="time">Time &nbsp;</label>
+                    <input type="time" id="time" name="Time" placeholder="10:00 AM">
+                  </section>
+        
+                   <section class="enddt">
+                    <input type="date" id="date" name="Endate" placeholder="End Date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="time" id="time" name="Time" placeholder="10:00 AM">
+                   </section>
+                  
+                   <br>
+                  
+
+                
+                  <button type="button" class="back-btn" form="event details"> Back</button> 
+                  <button type="submit" class="submit-btn" form="event details" formtarget="#"> Next</button> 
+               </form>
+
+               <h3 class="help">Having trouble&#63 <a href="#">Get help</a> </h3>
+           </section>
+        </div>
+    </body>
+
+</html>
