@@ -125,6 +125,11 @@ button[type=button] {
     border: 1px solid #ccc;
 }
 
+button[type=submit]:hover {
+    background-color: #8D66F2;
+
+}
+
 .help {
     float: right;
     margin-right: 5rem;
